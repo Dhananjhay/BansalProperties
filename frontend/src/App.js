@@ -1,29 +1,34 @@
 import React from 'react';
-
 import './App.css';
-import PersonIcon from '@mui/icons-material/Person';
+import { useState } from 'react';
+
+import DrawerAppBar from './components/DrawerAppBar';
+import Form from './Pages/Form';
+import Listings from './Pages/Listings'
 
 function App() {
+
+  const [option, setOption] = useState('');
+  
   return (
     <React.Fragment>
-    <div className='header'>
-    Bansal Properties  
+      <DrawerAppBar
+      option={option}
+      setOption={setOption}
+      />
+      {
+        option === 'SELL/RENT' 
+        ?
+        <div className='center form'>
+         <Form/>
+       </div>
+       :
+       <div className=''>
 
-    Login <PersonIcon/>
-    </div>
-    <div>
-      About
-      <img src="./images/pp.png" alt='pp' width='25%' height='25%'/>
-
-    </div>
-    <div className='footer'>
-      <section>
-        Residential
-      </section>
-      <section>
-        Commercial
-      </section>
-    </div>
+         <Listings/>
+       </div>
+      }
+      
     </React.Fragment>
   );
 }
