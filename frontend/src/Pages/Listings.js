@@ -18,7 +18,7 @@ const Listings = () => {
 
     <div 
     style={{
-      marginTop: '5%', 
+      marginTop: '60px', 
       display: 'flex', 
       justifyContent:'center'
       }}>

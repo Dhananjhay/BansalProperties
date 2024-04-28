@@ -9,6 +9,8 @@ import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
 import { Button } from '@mui/material';
 
+import '../App.css'
+
 const Form = () => {
 
     const [formData, setFormData] = useState({
@@ -56,15 +58,12 @@ const Form = () => {
     <Box
       component="form"
       margin={1}
-      sx={{
-        display: 'flex',
-        flexDirection: 'row',
-        padding: '5px'
-      }}
+      className='Box'
     >
         <Box
         sx={{
             margin: '2px',
+            gap: '1rem',
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'flex-start'
@@ -91,9 +90,6 @@ const Form = () => {
             shrink: true,
         }}
         fullWidth
-        sx={{
-            marginTop:'10px'
-        }}
         onChange={handleChange}
         disabled={propType === 'commercial'}
         />
@@ -106,15 +102,15 @@ const Form = () => {
             shrink: true,
         }}
         fullWidth
-        sx={{
-            marginTop:'10px'
-        }}
         onChange={handleChange}
         />
         </Box>
         <Box
         sx={{
-            margin: '2px'
+            margin: '2px',
+            gap: '0.8rem',
+            display: 'flex',
+            flexDirection:'column'
         }}
         >
     <TextField 
@@ -131,9 +127,6 @@ const Form = () => {
         label="Price" 
         variant="outlined"
         fullWidth 
-        sx={{
-        marginTop: '10px'
-        }}
         onChange={handleChange}
     />
         </Box>
@@ -141,7 +134,6 @@ const Form = () => {
             <Box
         sx={{
             margin: '7px',
-            textAlign: 'center',
             display: 'flex',
             justifyContent: 'space-evenly'
         }}

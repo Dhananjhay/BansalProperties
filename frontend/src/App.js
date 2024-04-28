@@ -5,6 +5,7 @@ import { useState } from 'react';
 import DrawerAppBar from './components/DrawerAppBar';
 import Form from './Pages/Form';
 import Listings from './Pages/Listings'
+import Introduction from './Pages/Introduction';
 
 function App() {
 
@@ -13,7 +14,6 @@ function App() {
   return (
     <React.Fragment>
       <DrawerAppBar
-      option={option}
       setOption={setOption}
       />
       {
@@ -23,10 +23,11 @@ function App() {
          <Form/>
        </div>
        :
-       <div className=''>
-
+       option === 'FEATURED LISTINGS'
+       ?
          <Listings/>
-       </div>
+       :
+       <Introduction setOption={setOption}/>
       }
       
     </React.Fragment>

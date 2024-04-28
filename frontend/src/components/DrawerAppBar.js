@@ -1,46 +1,42 @@
 import React from 'react'
-import { useState } from 'react'
 
 import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import CssBaseline from '@mui/material/CssBaseline';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
+import ApartmentIcon from '@mui/icons-material/Apartment';
+import Container from '@mui/material/Container';
 
-const navItems = ['FEATURED LISTINGS', 'SELL/RENT'];
-
-const DrawerAppBar = (props) => {
-
-    const {option, setOption} = props;
+const DrawerAppBar = ({setOption}) => {
 
   return (
-        <Box>
-        <AppBar component="nav" sx={{backgroundColor: 'white'}}>
-            <Toolbar>
-            <Typography
-            variant="h4"
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' }, color: 'black' }}
-            >
-            BANSAL PROPERTIES
+        <AppBar component="static">
+        <Container maxWidth="xl">
+        <Toolbar disableGutters sx={{
+           justifyContent: 'center'
+        }}>
+          <ApartmentIcon sx={{ mr: 1 }} />
+          <Typography
+            variant="h6"
+            noWrap
+            component="a"
+            onClick={()=>setOption('')}
+            sx={{
+              mr: 2,
+              fontFamily: 'monospace',
+              fontWeight: 700,
+              letterSpacing: '.3rem',
+              color: 'inherit',
+              textDecoration: 'none',
+              cursor: 'pointer',
+            }}
+          >
+            BANSAL
           </Typography>
-          <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-            {navItems.map((item) => (
-              option === item ?
-              <Button key={item} sx={{ color: 'black', margin: '2px'}} variant='contained'>
-                {item}
-              </Button>
-              :
-              <Button key={item} sx={{ color: 'black', margin: '2px'}} onClick={() => setOption(item)}>
-              {item}
-              </Button>
-              ))}
-          </Box>
-            </Toolbar>
+          </Toolbar>
+          </Container>
         </AppBar>
-        </Box>
   )
 }
 
 export default DrawerAppBar
+
