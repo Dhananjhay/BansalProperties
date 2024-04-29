@@ -128,21 +128,20 @@ const Listings = () => {
             {address}
             </p>
             <div className='listButtons'>
-            <Button variant='contained' 
-            sx={{
-              marginTop: '1rem',
-              fontSize: '20px'
-            }}
-            onClick={()=> handleClickOpen(id)}
-            >Interested
-            </Button>
-
             <Button variant='contained' sx={{
               marginTop: '1rem',
               fontSize: '20px',
               backgroundColor: available ? 'green' : 'red'
             }}>{available ? 'Available' : lease ? 'Sold' : 'Rented'}
             </Button>
+              <Button variant='contained' 
+              sx={{
+                marginTop: '1rem',
+                fontSize: '20px'
+              }}
+              onClick={()=> handleClickOpen(id)}
+              >Interested
+              </Button>
               </div>
           </div>
           )

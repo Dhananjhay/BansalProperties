@@ -6,6 +6,7 @@ import DrawerAppBar from './Components/DrawerAppBar';
 import Form from './Pages/Form';
 import Listings from './Pages/Listings'
 import Introduction from './Pages/Introduction';
+import { Button } from '@mui/material';
 
 function App() {
 
@@ -16,6 +17,26 @@ function App() {
       <DrawerAppBar
       setOption={setOption}
       />
+      {
+        option !== ''
+        ?
+        <div style={{
+          marginTop: '5rem',
+          textAlign:'center',
+        }}>
+         <Button 
+         variant='contained' 
+         onClick={()=> setOption('')}
+         sx={{
+          backgroundColor:'black'
+         }}
+         >
+          HOMEPAGE
+        </Button>
+        </div>
+        :
+        null
+      }
       {
         option === 'SELL/RENT' 
         ?

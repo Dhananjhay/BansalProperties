@@ -1,13 +1,13 @@
 .center {
     position: absolute;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
+    top: 45%;
+    transform: translate(-50%,-57%);
 }
 
 @media all and (max-height: 800px) and (min-height: 300px) {
     .center{
-        top: 135%
+        top: 175%;
     }
 }
 @media all and (max-height: 800px) and (min-height: 400px) {
@@ -27,7 +27,7 @@
 }
 @media all and (max-height: 800px) and (min-height: 700px) {
     .center{
-        top: 60%
+        top: 60%;
     }
 }
 
@@ -36,6 +36,7 @@
     border-radius: 1rem;
     width: 90vw;
     max-width: 1170px;
+    margin-bottom: 2rem;
 }
 
 .introduction {
