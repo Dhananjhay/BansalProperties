@@ -6,7 +6,7 @@ import {listingData} from '../Data/listingData.js'
 import BedIcon from '@mui/icons-material/Bed';
 import BathtubIcon from '@mui/icons-material/Bathtub';
 import { Button } from '@mui/material';
-
+import Link from '@mui/material/Link';
 import PopUpDialog from '../Components/PopUpDialog.js';
 
 
@@ -19,6 +19,7 @@ const Listings = () => {
 
   const [propType, setPropType] = useState(false);
   const [lease, setLease] = useState(true);
+
 
   const handleClickOpen = (id) => {
     setOpen(true);
@@ -127,20 +128,35 @@ const Listings = () => {
             <p className='feature'>
             {address}
             </p>
-            <div className='listButtons'>
             <Button variant='contained' sx={{
               marginTop: '1rem',
               fontSize: '20px',
+              borderRadius: '1rem',
               backgroundColor: available ? 'green' : 'red'
             }}>{available ? 'Available' : lease ? 'Sold' : 'Rented'}
             </Button>
+            <div className='listButtons'>
               <Button variant='contained' 
               sx={{
                 marginTop: '1rem',
                 fontSize: '20px'
               }}
               onClick={()=> handleClickOpen(id)}
-              >Interested
+              >VIEW
+              </Button>
+              <Button variant='contained' 
+              sx={{
+                marginTop: '1rem',
+                fontSize: '20px'
+              }}
+              >        
+              <Link
+                href={"https://wa.me/919711887400?text=" + "Hello! I'm interested in " + (lease ? 'purchas' : 'rent') + "ing " + address + "."} 
+                color="inherit" 
+                underline='none'
+                >
+                CONTACT
+                </Link>
               </Button>
               </div>
           </div>
