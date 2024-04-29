@@ -1,9 +1,6 @@
 import houseTemplate from '../Images/houseTemplate.jpg'
 import shopTemplate from '../Images/shopTemplate.png'
 
-import lahore from '../Images/Prop1/lahore.webp'
-import abhimanyu from '../Images/Prop1/abhimanyu.JPEG'
-
 export const listingData = [
     {
         id: 1,
@@ -21,7 +18,7 @@ export const listingData = [
         negotiable: true,
         img: houseTemplate,
         available: true,
-        collection: [lahore,abhimanyu]
+        collection: []
     },
     {
         id: 2,
@@ -39,7 +36,7 @@ export const listingData = [
         negotiable: true,
         img: houseTemplate,
         available: true,
-        collection: [lahore,abhimanyu]
+        collection: []
     },
     {
         id: 3,
@@ -52,7 +49,7 @@ export const listingData = [
         negotiable: true,
         img: shopTemplate,
         available: true,
-        collection: [lahore,abhimanyu]
+        collection: []
     },
     {
         id: 4,
@@ -70,7 +67,7 @@ export const listingData = [
         negotiable: true,
         img: houseTemplate,
         available: true,
-        collection: [lahore,abhimanyu]
+        collection: []
     },
     {
         id: 5,
