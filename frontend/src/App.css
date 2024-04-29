@@ -17,7 +17,7 @@
 }
 @media all and (max-height: 600px) and (min-height: 500px) {
     .center{
-        top: 85%
+        top: 95%
     }
 }
 @media all and (max-height: 700px) and (min-height: 600px) {
