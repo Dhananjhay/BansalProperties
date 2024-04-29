@@ -87,6 +87,14 @@
     max-width: 400px
 }
 
+.listButtons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+
 @media all and (min-width: 720px) {
     .introduction {
         display: flex;
@@ -96,6 +104,12 @@
         transform: translate(-50%, -50%);
         width: 90vw;
         max-width: 1170px;
+    }
+}
+
+@media all and (max-width: 420px){
+    .listButtons{
+        justify-content: center;
     }
 }
 

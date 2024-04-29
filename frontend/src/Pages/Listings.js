@@ -127,10 +127,7 @@ const Listings = () => {
             <p className='feature'>
             {address}
             </p>
-            <div style={{
-              display: 'flex',
-              justifyContent: 'space-between'
-            }}>
+            <div className='listButtons'>
             <Button variant='contained' 
             sx={{
               marginTop: '1rem',
