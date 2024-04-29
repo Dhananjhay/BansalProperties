@@ -1,17 +1,15 @@
 {
   "files": {
     "main.css": "/BansalProperties/static/css/main.d0bd9cfc.css",
-    "main.js": "/BansalProperties/static/js/main.dc72bf6a.js",
-    "static/media/lahore.webp": "/BansalProperties/static/media/lahore.e4c0dc88bff880ecc6e6.webp",
+    "main.js": "/BansalProperties/static/js/main.28b36f81.js",
     "static/media/houseTemplate.jpg": "/BansalProperties/static/media/houseTemplate.f594641af032eaf2169e.jpg",
-    "static/media/singham.jpg": "/BansalProperties/static/media/singham.2e8c00f2770aae672dcd.jpg",
-    "static/media/abhimanyu.JPEG": "/BansalProperties/static/media/abhimanyu.80014b2101bc4d7b558a.JPEG",
+    "static/media/singham.jpg": "/BansalProperties/static/media/singham.d074232b0e25f0f916bc.jpg",
     "index.html": "/BansalProperties/index.html",
     "main.d0bd9cfc.css.map": "/BansalProperties/static/css/main.d0bd9cfc.css.map",
-    "main.dc72bf6a.js.map": "/BansalProperties/static/js/main.dc72bf6a.js.map"
+    "main.28b36f81.js.map": "/BansalProperties/static/js/main.28b36f81.js.map"
   },
   "entrypoints": [
     "static/css/main.d0bd9cfc.css",
-    "static/js/main.dc72bf6a.js"
+    "static/js/main.28b36f81.js"
   ]
 }
