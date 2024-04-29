@@ -2,25 +2,41 @@ import React, {useState} from 'react'
 import Switch from '@mui/material/Switch';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
-import {listingData} from '../listingData.js'
+import {listingData} from '../Data/listingData.js'
 import BedIcon from '@mui/icons-material/Bed';
 import BathtubIcon from '@mui/icons-material/Bathtub';
+import { Button } from '@mui/material';
+
+import PopUpDialog from '../Components/PopUpDialog.js';
+
+
 
 import '../App.css'
 
 const Listings = () => {
+  const [open, setOpen] = useState(false);
+  const [selectedId,setSelectedId] = useState(0);
 
   const [propType, setPropType] = useState(false);
   const [lease, setLease] = useState(true);
 
+  const handleClickOpen = (id) => {
+    setOpen(true);
+    setSelectedId(id);
+  };
+
   return (
     <React.Fragment>
-
+      <PopUpDialog 
+        open={open} 
+        setOpen={setOpen}
+        property={listingData.filter((prop)=> prop.id === selectedId)}
+      />
     <div 
     style={{
-      marginTop: '60px', 
       display: 'flex', 
-      justifyContent:'center'
+      justifyContent:'center',
+      marginTop: '5rem'
       }}>
     <FormGroup>
       <FormControlLabel
@@ -50,7 +66,7 @@ const Listings = () => {
     <div className='propertyList'>
       {
         listingData.filter((property) => property.leaseType === (lease ? 'Sale' : 'Rent')).filter((property) => property.type === (propType ? 'Commercial' : 'Residential' )).map((item)=>{
-          const {id, price, address, numBeds, numBaths, numBal, area, furnished, facing, lift, negotiable, img} = item;
+          const {id, price, address, numBeds, numBaths, numBal, area, furnished, facing, lift, negotiable, img, available, collection} = item;
           return(
           <div className='property' key={id}>
             <div style={{
@@ -67,13 +83,16 @@ const Listings = () => {
             backgroundColor: '#f1f5f8', 
             borderRadius: '1rem', 
             padding: '0.5rem', 
-            fontSize: '24px'}}>
+            fontSize: '24px',
+            marginTop: '0.5rem'
+            }}
+            >
             {price} /-
           </p>
           <div style={{
             display: 'flex',
-            justifyContent: 'space-around',
-            margin: '1rem'
+            justifyContent: 'space-between',
+            margin: '1rem 0rem'
           }}>
             {
               propType 
@@ -82,11 +101,6 @@ const Listings = () => {
             <div className='feature'>
             <span>
               {furnished ? <>Furnished</> : <>Unfurnished</>}
-              </span>
-            </div>
-            <div className='feature'>
-            <span>
-              {negotiable ? <>Negotiable</> : <>Unnegotiable</>}
               </span>
             </div>
               </>
@@ -113,6 +127,26 @@ const Listings = () => {
             <p className='feature'>
             {address}
             </p>
+            <div style={{
+              display: 'flex',
+              justifyContent: 'space-between'
+            }}>
+            <Button variant='contained' 
+            sx={{
+              marginTop: '1rem',
+              fontSize: '20px'
+            }}
+            onClick={()=> handleClickOpen(id)}
+            >Interested
+            </Button>
+
+            <Button variant='contained' sx={{
+              marginTop: '1rem',
+              fontSize: '20px',
+              backgroundColor: available ? 'green' : 'red'
+            }}>{available ? 'Available' : lease ? 'Sold' : 'Rented'}
+            </Button>
+              </div>
           </div>
           )
         })

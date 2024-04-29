@@ -62,11 +62,11 @@ const Form = () => {
     >
         <Box
         sx={{
-            margin: '2px',
+            margin: '2px 0px',
             gap: '1rem',
             display: 'flex',
             flexDirection: 'column',
-            justifyContent: 'flex-start'
+            justifyContent: 'flex-start',
         }}
         >
     <TextField
@@ -107,10 +107,10 @@ const Form = () => {
         </Box>
         <Box
         sx={{
-            margin: '2px',
+            margin: '2px 0px',
             gap: '0.8rem',
             display: 'flex',
-            flexDirection:'column'
+            flexDirection:'column',
         }}
         >
     <TextField 
@@ -135,7 +135,7 @@ const Form = () => {
         sx={{
             margin: '7px',
             display: 'flex',
-            justifyContent: 'space-evenly'
+            justifyContent: 'space-evenly',
         }}
         >
     <FormControl>

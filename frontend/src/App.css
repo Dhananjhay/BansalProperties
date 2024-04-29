@@ -18,18 +18,6 @@
     margin-top: 60px;
 }
 
-@media all and (max-width: 2000px) and (min-width: 700px) {
-    .introduction {
-        display: flex;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        width: 90vw;
-        max-width: 1170px;
-    }
-}
-
 .formContainer {
     display: 'flex';
     flex-direction: 'row';
@@ -40,7 +28,7 @@
 .propertyList {
     width: 90vw;
     max-width: 500px;
-    margin: 5rem auto;
+    margin: 2rem auto;
     display: grid;
     gap: 2rem;
 }
@@ -68,14 +56,65 @@
 }
 
 .Box {
+    padding: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     gap: 0.5rem;
 }
 
-@media all and (max-width: 700px) and (min-width: 320px) {
-    .Box {
-        flex-direction: column;
+.dialogFeature {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #FDE0D9;
+    border-radius: 1rem;
+    font-size: 20px;
+    padding: 0.5rem;
+}
+
+.dialog {
+    margin: 1rem 0rem;
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dialogImg {
+    width: 90vw;
+    max-width: 400px
+}
+
+@media all and (min-width: 720px) {
+    .introduction {
+        display: flex;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 90vw;
+        max-width: 1170px;
     }
+}
+
+@media all and (min-width: 500px) {
+
+    .dialog {
+        justify-content: center;
+    }
+
+}
+
+@media all and (max-width: 500px) and (min-width:320px) {
+    .dialog {
+        justify-content: center;
+    }
+}
+
+@media all and (max-width:720px) and (min-width:300px) {
+    .Box {
+            flex-direction: column;
+        }
 }

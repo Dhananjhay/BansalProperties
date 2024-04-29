@@ -9,12 +9,19 @@ import Container from '@mui/material/Container';
 const DrawerAppBar = ({setOption}) => {
 
   return (
-        <AppBar component="static">
+        <AppBar sx={{
+          backgroundColor: 'black'
+        }}>
         <Container maxWidth="xl">
         <Toolbar disableGutters sx={{
            justifyContent: 'center'
         }}>
-          <ApartmentIcon sx={{ mr: 1 }} />
+          <ApartmentIcon 
+          className='material-icons'
+          style={{
+          fontSize: '50px'
+          }}
+          />
           <Typography
             variant="h6"
             noWrap
@@ -24,13 +31,23 @@ const DrawerAppBar = ({setOption}) => {
               mr: 2,
               fontFamily: 'monospace',
               fontWeight: 700,
-              letterSpacing: '.3rem',
+              letterSpacing: '.2rem',
               color: 'inherit',
               textDecoration: 'none',
               cursor: 'pointer',
             }}
+            style={{
+              fontSize: '16px'
+            }}
           >
-            BANSAL
+            <div style={{
+              display: 'flex',
+              flexDirection: 'column',
+              margin:'0.5rem'
+            }}>
+            <p>BANSAL</p>
+            <p>PROPERTIES</p>
+            </div>
           </Typography>
           </Toolbar>
           </Container>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import profile from '../image/singham.jpg'
+import profile from '../Images/singham.jpg'
 import { Button } from '@mui/material'
 import Menu from '@mui/material/Menu';
 import EmailIcon from '@mui/icons-material/Email';
@@ -8,6 +8,8 @@ import MenuItem from '@mui/material/MenuItem';
 import ListItemText from '@mui/material/ListItemText';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import CallIcon from '@mui/icons-material/Call';
+
+import '../App.css'
 
 
 const Introduction = ({setOption}) => {
@@ -53,10 +55,17 @@ const Introduction = ({setOption}) => {
             fontSize: '24px',
             marginBottom: '2rem'
         }}>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni rem numquam ipsa? Harum fuga quas voluptate id excepturi.
+            Hi! I'm Sanjeev Bansal and I've been a realtor for more than 20 years. Over the years, I've carefully designed strategies and techniques to help clients achieve their real estate goals.
+        </p>
+        <p style={{
+            fontSize: '24px',
+            marginBottom: '2rem'
+        }}>
+           To do business or to get in touch with me, please choose an option from below.
         </p>
         <div style={{
             display: 'flex',
+            flexWrap: 'wrap',
             gap: '1rem',
             justifyContent: 'center'
         }}>
