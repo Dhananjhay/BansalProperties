@@ -1,4 +1,4 @@
-# Bansal Properties [https://dhananjhay.github.io/BansalProperties/]
+# Bansal Properties
 
 Important: For best user experience, please use a mobile device to access the website.
 
