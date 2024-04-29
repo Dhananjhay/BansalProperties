@@ -5,6 +5,32 @@
     transform: translate(-50%,-50%);
 }
 
+@media all and (max-height: 800px) and (min-height: 300px) {
+    .center{
+        top: 135%
+    }
+}
+@media all and (max-height: 800px) and (min-height: 400px) {
+    .center{
+        top: 105%
+    }
+}
+@media all and (max-height: 800px) and (min-height: 500px) {
+    .center{
+        top: 85%
+    }
+}
+@media all and (max-height: 800px) and (min-height: 600px) {
+    .center{
+        top: 70%
+    }
+}
+@media all and (max-height: 800px) and (min-height: 700px) {
+    .center{
+        top: 60%
+    }
+}
+
 .form {
     background: #fff;
     border-radius: 1rem;

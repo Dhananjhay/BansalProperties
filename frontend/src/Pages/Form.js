@@ -38,7 +38,7 @@ const Form = () => {
     <Box 
     sx={{
         margin: '7px',
-        textAlign: 'center'
+        textAlign: 'center',
     }}
     >
  <FormControl>
@@ -135,7 +135,8 @@ const Form = () => {
         sx={{
             margin: '7px',
             display: 'flex',
-            justifyContent: 'space-evenly',
+            flexWrap: 'wrap',
+            justifyContent: 'center',
         }}
         >
     <FormControl>
