@@ -5,24 +5,24 @@
     transform: translate(-50%,-57%);
 }
 
-@media all and (max-height: 800px) and (min-height: 300px) {
+@media all and (max-height: 400px) and (min-height: 300px) {
     .center{
         top: 175%;
     }
 }
-@media all and (max-height: 800px) and (min-height: 400px) {
+@media all and (max-height: 500px) and (min-height: 400px) {
     .center{
         top: 105%
     }
 }
-@media all and (max-height: 800px) and (min-height: 500px) {
+@media all and (max-height: 600px) and (min-height: 500px) {
     .center{
         top: 85%
     }
 }
-@media all and (max-height: 800px) and (min-height: 600px) {
+@media all and (max-height: 700px) and (min-height: 600px) {
     .center{
-        top: 70%
+        top: 74%
     }
 }
 @media all and (max-height: 800px) and (min-height: 700px) {
