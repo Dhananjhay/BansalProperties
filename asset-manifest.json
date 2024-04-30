@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/BansalProperties/static/css/main.d0bd9cfc.css",
-    "main.js": "/BansalProperties/static/js/main.b3b26db2.js",
+    "main.js": "/BansalProperties/static/js/main.80e78b41.js",
     "static/media/houseTemplate.jpg": "/BansalProperties/static/media/houseTemplate.f594641af032eaf2169e.jpg",
     "static/media/singham.jpg": "/BansalProperties/static/media/singham.d074232b0e25f0f916bc.jpg",
     "index.html": "/BansalProperties/index.html",
     "main.d0bd9cfc.css.map": "/BansalProperties/static/css/main.d0bd9cfc.css.map",
-    "main.b3b26db2.js.map": "/BansalProperties/static/js/main.b3b26db2.js.map"
+    "main.80e78b41.js.map": "/BansalProperties/static/js/main.80e78b41.js.map"
   },
   "entrypoints": [
     "static/css/main.d0bd9cfc.css",
-    "static/js/main.b3b26db2.js"
+    "static/js/main.80e78b41.js"
   ]
 }
