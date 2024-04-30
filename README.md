@@ -9,4 +9,4 @@ Important: For best user experience, please use a mobile device to access the we
 - The website doesn't have a backend architecture and works solely using frontend technologies:
   JavaScript, React.js, Materials UI, CSS and HTML.
 - Hosted using github pages, it is now available inside google search engine's ecosystem.
-- I've used WhatsApp's API to send messages to the realtor.
+- Orchestrated WhatsApp's API to send form requests to the realtor.
